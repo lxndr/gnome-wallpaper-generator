@@ -812,7 +812,7 @@ t.exports=function(t){if("string"!=typeof t||""===t)return!1;for(var e;e=/(\\).|
   \******************/
 /*! no static exports found */
 /*! all exports used */
-/*! ModuleConcatenation bailout: Module is not an ECMAScript module */function(t,e,r){const n=r(/*! path */0),i=r(/*! globby */114),o=r(/*! xmlbuilder */268);var s=r(/*! yargs */276).default("d",600).argv;const a=["png","jpg","svg"].join(","),u=s._.map(t=>n.join(t,"**",`*.{${a}}`)),c=i.sync(u),l=o.create("background"),p=l.ele("starttime");p.ele("hour","00"),p.ele("minute","00"),p.ele("second","01"),c.forEach((t,e)=>{const r=e<c.length-1?c[e+1]:c[0],n=l.ele("static");n.ele("duration",s.duration),n.ele("file",t);const i=l.ele("transition");i.ele("duration",2),i.ele("from",t),i.ele("to",r)});const f=l.end({pretty:!0});console.log(f)},
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */function(t,e,r){const n=r(/*! path */0),i=r(/*! globby */114),o=r(/*! xmlbuilder */268);var s=r(/*! yargs */276).default("duration",60).argv;const a=["png","jpg","svg"].join(","),u=s._.map(t=>n.join(t,"**",`*.{${a}}`)),c=i.sync(u),l=o.create("background"),p=l.ele("starttime");p.ele("hour","00"),p.ele("minute","00"),p.ele("second","01"),c.forEach((t,e)=>{const r=e<c.length-1?c[e+1]:c[0],n=l.ele("static");n.ele("duration",s.duration),n.ele("file",t);const i=l.ele("transition");i.ele("duration",2),i.ele("from",t),i.ele("to",r)});const f=l.end({pretty:!0});console.log(f)},
 /*!**************************************!*\
   !*** ./node_modules/globby/index.js ***!
   \**************************************/

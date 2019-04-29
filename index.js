@@ -3,7 +3,7 @@ const globby = require('globby');
 const xmlbuilder = require('xmlbuilder');
 
 var argv = require('yargs')
-  .default('d', 600)
+  .default('duration', 60)
   .argv;
 
 const exts = ['png', 'jpg', 'svg'].join(',');
