@@ -6,8 +6,10 @@
   "scripts": {
     "build": "NODE_ENV=production webpack"
   },
-  "author": "",
+  "author": "lxndr",
+  "private": true,
   "license": "ISC",
+  "repository": "https://github.com/lxndr/gnome-wallpaper-generator",
   "devDependencies": {
     "globby": "^9.2.0",
     "webpack": "^4.30.0",
